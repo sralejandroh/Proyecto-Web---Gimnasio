@@ -1,0 +1,73 @@
+/*ESTILOS DEL MAIN*/
+
+.principal {
+    height: 210px;
+    width: 100%;
+    background-color: black;
+}
+
+/*ESTILOS DEL FOOTER*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pieInicial {
+    background-color: black;
+    display: inline-flex;
+}
+
+.mensajePie {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+    padding: 50px 30px;
+}
+
+.nombreBlanco {
+    width: 10%;
+    padding: 0px 500px 0 480px;
+}
+
+.logoInstagram {
+    width: 7%;
+    padding: 0 30px 0 0;
+}
+
+.pieFinal {
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 15px;
+}
+
+.navegacionPie {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgb(75, 74, 74);
+}
+
+.opcionPie {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(51, 169, 238);
+}
+
+.opcionPie:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.mensajeDerechos {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: whitesmoke;
+    padding: 10px 0 0;
+}
