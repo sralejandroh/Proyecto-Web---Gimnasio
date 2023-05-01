@@ -45,7 +45,6 @@ body {
 }
 
 .opcionCabezero:hover {
-    text-decoration: underline;
     color: rgb(51, 169, 238);
 }
 
@@ -78,7 +77,7 @@ body {
     padding: 0 20px;
     color: #000;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 18px;
     border: 1px solid rgb(51, 169, 238);
     transition: all .7s ease;
 }
@@ -172,7 +171,7 @@ body {
 /*ESTILOS DEL MAIN*/
 
 .principal {
-    height: 320px;
+    height: 310px;
     width: 100%;
     background-color: black;
 }
@@ -230,7 +229,6 @@ body {
 
 .opcionPie:hover {
     color: whitesmoke;
-    text-decoration: underline;
 }
 
 .mensajeDerechos {
@@ -238,5 +236,5 @@ body {
     font-weight: bold;
     font-style: italic;
     color: whitesmoke;
-    padding: 10px 0 0;
+    padding: 15px 0 10px;
 }
