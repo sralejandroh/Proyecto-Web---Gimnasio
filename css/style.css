@@ -307,10 +307,12 @@ body {
     height: 350px;
     background: rgb(7, 7, 77);
     margin: 20px auto;
-    border-radius: 4px;
+    border-radius: 3px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px rgb(7, 7, 77);
 }
 
 .inicioFormulario {
@@ -319,7 +321,7 @@ body {
     width: 450px;
     margin: 0px auto;
     position: absolute;
-    background: whitesmoke;
+    background: black;
     margin-top: 15px;
 }
 
@@ -331,7 +333,7 @@ body {
 }
 
 .formularioForo #informacionForo {
-    color: black;
+    color: whitesmoke;
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
@@ -340,7 +342,7 @@ body {
 
 .formularioForo #especificacionForo {
     font-size: 10px;
-    color: gray;
+    color: white;
     font-weight: lighter;
     text-transform: uppercase;
 }
@@ -352,10 +354,10 @@ body {
     margin-bottom: 20px;
     padding-bottom: -80px;
     border: none;
-    border-bottom: 3px solid rgb(51, 169, 238);
+    border-bottom: 1px solid rgb(51, 169, 238);
     overflow: auto;
     position: relative;
-    background-color: whitesmoke;
+    background-color: black;
 }
 
 .entradaForo[type="text"]:active:focus,
@@ -375,7 +377,7 @@ body {
 
 ::placeholder {
     font-size: 14px;
-    color: #b7b7b7;
+    color: whitesmoke;
     text-transform: capitalize;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
@@ -385,7 +387,7 @@ body {
 
 .inicioFormulario .botonForo {
     width: 85%;
-    background: rgb(7, 7, 77);
+    background: rgb(51, 169, 238);
     padding: 15px;
     border: none;
     border-radius: 5px;
@@ -395,6 +397,171 @@ body {
 }
 
 .inicioFormulario .botonForo:hover {
-    background-color: rgb(51, 169, 238);
+    background-color: rgb(7, 7, 77);
     cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+/*ESTILO PÁGINA SESIÓN*/
+
+.cuadroSesion {
+    position: relative;
+    left: 35.5%;
+    width: 400px;
+    padding: 50px;
+    background: black;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(7, 7, 77);
+    border-radius: 10px;
+}
+
+#tituloSesion {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.cuadroInformacionSesion {
+    position: relative;
+}
+
+.cuadroInformacionSesion input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(7, 7, 77);
+    outline: none;
+    background: transparent; 
+}
+
+.cuadroInformacionSesion label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: whitesmoke;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.cuadroInformacionSesion input:focus ~ label,
+.cuadroInformacionSesion input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: rgb(51, 169, 238);
+    font-size: 12px;
+}
+
+.cuadroSesion form a {
+    position: relative;
+    left: 28%;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(51, 169, 238);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.cuadroSesion a:hover {
+    background-color: rgb(51, 169, 238);
+    color: whitesmoke;
+    border-radius: 1px;
+    box-shadow: 0 0 5px rgb(51, 169, 238),
+                0 0 25px rgb(51, 169, 238),
+                0 0 50px rgb(51, 169, 238),
+                0 0 100px rgb(51, 169, 238);
+}
+
+.cuadroSesion a span {
+    position: absolute;
+    display: block;
+}
+
+.cuadroSesion a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(51, 169, 238));
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.cuadroSesion a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(51, 169, 238));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.cuadroSesion a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(51, 169, 238));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.cuadroSesion a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(51, 169, 238));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%, 100% {
+        bottom: 100%;
+    }
 }
