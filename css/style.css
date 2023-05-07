@@ -235,6 +235,46 @@ body {
     opacity: 1;
 }
 
+.galeriaInicio {
+    display: flex;
+    height: 220px;
+    gap: 10px;
+    padding: 30px 50px;
+}
+
+.galeriaInicio div {
+    flex: 3;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    transition: all 1s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.galeriaInicio div:hover {
+    flex: 5;
+}
+
+#imagenInicio1 {
+    background-image: url(/img/gym1.jpeg);
+}
+
+#imagenInicio2 {
+    background-image: url(/img/gym2.jpeg);
+}
+
+#imagenInicio3 {
+    background-image: url(/img/gym3.jpeg);
+}
+
+#imagenInicio4 {
+    background-image: url(/img/gym4.jpeg);
+}
+
+#imagenInicio5 {
+    background-image: url(/img/gym5.jpeg);
+}
+
 /*ESTILOS DEL FOOTER*/
 
 .pieInicial {
@@ -375,7 +415,7 @@ body {
     transform: translateY(-20px);
 }
 
-::placeholder {
+.entradaForo ::placeholder {
     font-size: 14px;
     color: whitesmoke;
     text-transform: capitalize;
@@ -387,7 +427,7 @@ body {
 
 .inicioFormulario .botonForo {
     width: 85%;
-    background: rgb(51, 169, 238);
+    background: rgb(7, 7, 77);
     padding: 15px;
     border: none;
     border-radius: 5px;
@@ -397,13 +437,13 @@ body {
 }
 
 .inicioFormulario .botonForo:hover {
-    background-color: rgb(7, 7, 77);
+    background-color: rgb(51, 169, 238);
     cursor: pointer;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
 
-/*ESTILO PÁGINA SESIÓN*/
+/*ESTILO PÁGINA SESIÓN Y REGISTRO*/
 
 .cuadroSesion {
     position: relative;
@@ -565,3 +605,8 @@ body {
         bottom: 100%;
     }
 }
+
+/*------------------------------------------------------------------------------------------------------*/
+
+/*ESTILO PÁGINA PLANES*/
+
