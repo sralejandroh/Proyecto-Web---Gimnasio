@@ -467,6 +467,7 @@ body {
 
 .cuadroInformacionSesion {
     position: relative;
+    top: 30px;
 }
 
 .cuadroInformacionSesion input {
@@ -479,6 +480,19 @@ body {
     border-bottom: 1px solid rgb(7, 7, 77);
     outline: none;
     background: transparent; 
+}
+
+.cuadroInformacionSesion input::placeholder {
+    position: relative;
+    left: 120px;
+    color: black;
+}
+
+.cuadroInformacionSesion input:focus::placeholder,
+.cuadroInformacionSesion input:valid::placeholder{
+    left: 0;
+    color: rgb(151, 145, 145);
+    font-size: 15px;
 }
 
 .cuadroInformacionSesion label {
@@ -528,6 +542,33 @@ body {
 .cuadroSesion a span {
     position: absolute;
     display: block;
+}
+
+.botonRegistro {
+    position: relative;
+    left: 28%;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(51, 169, 238);
+    background-color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: none;
+}
+
+.botonRegistro:hover {
+    background-color: rgb(51, 169, 238);
+    color: whitesmoke;
+    border-radius: 1px;
+    box-shadow: 0 0 5px rgb(51, 169, 238),
+        0 0 25px rgb(51, 169, 238),
+        0 0 50px rgb(51, 169, 238),
+        0 0 100px rgb(51, 169, 238);
 }
 
 .cuadroSesion a span:nth-child(1) {
