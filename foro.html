@@ -69,8 +69,18 @@
                         <p id="especificacionForo">
                             Suscribete con el correo para no perderte ninguna oferta o información.
                         </p>
-                        <form>
-                            <input  class="entradaForo" type="text" placeholder="correo@dominio.dominio" required><br />
+                        <!--CONEXIÓN API DE ENVÍOS EMAIL-->
+                        <form action="https://formsubmit.co/inggenea@gmail.com" method="POST">
+                            <input  class="entradaForo" type="email" name="email" placeholder="correo@dominio.dominio" required>
+                            <!--REDIRIGE A LA PÁGINAM PRINCIPAL-->
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                            <!--OCULTA EL CAPTCHA-->
+                            <input type="hidden" name="_captcha" value="false">
+                            <!--ENVÍA UNA RESPUESTA AUTOMÁTICA-->
+                            <input type="hidden" name="_autoresponse" value="Gracias por suscribirse al foro de GYM.">
+                            <!--ESTILO DEL EMAIL-->
+                            <input type="hidden" name="_template" value="table">
+                            <br/>
                             <button class="botonForo" role="button">
                                 SUSCRIBIRSE
                             </button>

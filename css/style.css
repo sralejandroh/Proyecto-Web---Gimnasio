@@ -387,7 +387,7 @@ body {
     text-transform: uppercase;
 }
 
-.entradaForo[type="text"] {
+.entradaForo[type="email"] {
     width: 85%;
     height: 60px;
     margin-top: 20px;
@@ -398,17 +398,18 @@ body {
     overflow: auto;
     position: relative;
     background-color: black;
+    color: whitesmoke;
 }
 
-.entradaForo[type="text"]:active:focus,
-.entradaForo[type="text"]:focus,
-.entradaForo[type="text"]:hover {
+.entradaForo[type="email"]:active:focus,
+.entradaForo[type="email"]:focus,
+.entradaForo[type="email"]:hover {
     outline: none;
     font-size: 20px;
 }
 
-.entradaForo[type="text"]:focus::-webkit-input-placeholder,
-.entradaForo[type="text"]:active:focus::-webkit-input-placeholder {
+.entradaForo[type="email"]:focus::-webkit-input-placeholder,
+.entradaForo[type="email"]:active:focus::-webkit-input-placeholder {
     font-size: 12px;
     display: block;
     -webkit-transform: translateY(-20px);
@@ -680,21 +681,23 @@ body {
     font-weight: bold;
     font-size: 25px;
     color: whitesmoke;
-    padding-top: 10px;
+    padding-top: 5px;
     text-align: center;
 }
 
 .especificacionPlan {
-    padding-top: 15px;
+    padding-top: 20px;
     color: whitesmoke;
+    height: 90px;
 }
 
 .cuadroBotonPlanes {
     text-align: center;
+    position: relative;
+    top: 10%;
 }
 
 .botonPlan {
-    margin-top: 15px;
     padding: 10px 15px;
     border-radius: 10px;
     border: none;
