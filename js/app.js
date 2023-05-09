@@ -9,7 +9,7 @@ document.getElementById('formularioRegistro').addEventListener('submit', functio
     let formulario = new FormData(document.getElementById('formularioRegistro'));
 
     //SIRVE PARA CREAR LA PETICIÓN DE REGISTRO DE PHP
-    fetch('registro.php', {
+    fetch('/php/registro.php', {
         //MÉTODO DE INSERCIÓN O ACTUALIZACIÓN DE DATOS
         method : 'POST',
         //ES EL OBJETO QUE TENDRÁ LOS CAMPOS DEL FORMULARIO DE REGISTRO

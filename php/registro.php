@@ -16,13 +16,13 @@ try{
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
-    $pdo = $conexion->prepare('INSERT INTO usuarios(nombre_usuario,apellidos_usuario,edad_usuario,telefono_usuario,correo_usuario,contrasena_usuario) VALUES (?,?,?)');
+    $pdo = $conexion->prepare('INSERT INTO usuarios(nombre_usuario,apellido_usuario,edad_usuario,telefono_usuario,correo_usuario,contrasena_usuario) VALUES (?,?,?)');
     $pdo->bindParam(1, $nombre);
-    $pdo->bindParam(1, $apellidos);
-    $pdo->bindParam(1, $edad);
-    $pdo->bindParam(1, $telefono);
-    $pdo->bindParam(1, $correo);
-    $pdo->bindParam(1, $contrasena);
+    $pdo->bindParam(2, $apellidos);
+    $pdo->bindParam(3, $edad);
+    $pdo->bindParam(4, $telefono);
+    $pdo->bindParam(5, $correo);
+    $pdo->bindParam(6, $contrasena);
 
     $pdo->execute() or die(print($pdo->errorInfo()));
 
