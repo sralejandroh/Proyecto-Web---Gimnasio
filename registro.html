@@ -63,53 +63,46 @@
                         <h1 id="tituloSesion">
                             REGISTRO
                         </h1>
-                        <form>
+                        <form id="formularioRegistro" method="POST">
                             <div class="cuadroInformacionSesion">
-                                <input type="text" id="txt_nombre" required>
+                                <input type="text" id="txt_nombre" name="txt_nombre" required>
                                 <label for="txt_nombre">
                                     Nombre
                                 </label>
                             </div>
                             <div class="cuadroInformacionSesion">
-                                <input type="text" required>
-                                <label>
+                                <input type="text" id="txt_apellidos" name="txt_apellidos" required>
+                                <label for="txt_apellidos">
                                     Apellidos
                                 </label>
                             </div>
                             <div class="cuadroInformacionSesion">
-                                <input type="number" required>
-                                <label>
+                                <input type="number" id="int_edad" name="int_edad" required>
+                                <label for="int_edad">
                                     Edad
                                 </label>
                             </div>
                             <div class="cuadroInformacionSesion">
-                                <input type="tel" required>
-                                <label>
+                                <input type="tel" id="txt_telefono" name="txt_telefono" required>
+                                <label for="txt_telefono">
                                     Teléfono
                                 </label>
                             </div>
                             <div class="cuadroInformacionSesion">
-                                <input type="email" placeholder="correo@dominio.dominio" required>
-                                <label>
+                                <input type="email" id="txt_correo" name="txt_correo" placeholder="correo@dominio.dominio" required>
+                                <label for="txt_correo">
                                     Correo
                                 </label>
                             </div>
                             <div class="cuadroInformacionSesion">
-                                <input type="password" required>
-                                <label>
+                                <input type="password" id="txt_contrasena" name="txt_contrasena" required>
+                                <label for="txt_contrasena">
                                     Contraseña
                                 </label>
                             </div>
                             <button class="botonRegistro" type="submit">
                                 INICIAR
                             </button>
-                            <!--<a href="index.html">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                INICIAR
-                            </a>-->
                         </form>
                     </div>
                 </section>
@@ -137,6 +130,9 @@
                 </p>
             </div>
         </footer>
+
+        <!--LLAMA LA CONEXIÓN CON JAVASCRIPT-->
+        <script src="/js/app.js"></script>
 
     </body>
 
